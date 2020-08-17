@@ -3,7 +3,7 @@
     <div class="col mb-4">
       <summary class="card" style="width: 16rem;">
         <div class="card-body">
-          <p class="card-text">{{ text }}</p>
+          <p class="card-text">{{ quoteText }}</p>
         </div>
       </summary>
     </div>
@@ -13,11 +13,6 @@
 <script>
 export default {
   props: ["quoteText"],
-  data() {
-    return {
-      text: this.quoteText,
-    };
-  },
 };
 </script>
 

@@ -53,6 +53,10 @@ export default {
       eventBus.$on('newQuoteAdded', (quoteText) => {
           this.quotesArray.push({id: this.quotesArray.length, text: quoteText});
       });
+
+      eventBus.$on('quoteDeleted', (index) => {
+        this.quotesArray.splice(index, 1);
+      })
   },
   components: {
     "header-component": Header,
